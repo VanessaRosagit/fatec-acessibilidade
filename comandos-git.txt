@@ -1,0 +1,6 @@
+git branch --show-current
+git checkout -b atividade-1-fonte-aumentar-diminuir 
+git status
+git add.
+git commit -m "Melhorar a usabilidade para quem tem baixa visão"
+git push -u origin atividade-1-fonte-aumentar-diminuir
