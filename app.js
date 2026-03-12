@@ -16,3 +16,10 @@ function diminuirFonte() {
         document.body.style.fontSize = tamanhoFonte + "%";
     }
 }
+const btn = document.getElementById('toggleContrast');
+const body = document.body;
+
+btn.addEventListener('click', () => {
+    body.classList.toggle('high-contrast');
+    // Opcional: Salvar preferência no localStorage
+});

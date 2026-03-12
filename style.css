@@ -254,4 +254,18 @@
       color: var(--muted);
       font-size: .95em;
     }
-  
+  body {
+    background-color: white;
+    color: black;
+    transition: all 0.3s; /* Transição suave */
+}
+
+/* Classe que será adicionada pelo JS */
+body.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+body.high-contrast a {
+    color: yellow !important;
+}

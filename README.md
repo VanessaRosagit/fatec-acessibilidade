@@ -1,68 +1,97 @@
-# Projeto base para aula de Acessibilidade
-Criou os botões de acessibilidade
+# Projeto Base para Aula de Acessibilidade  
+
+**Autores:** Vanessa, Abigaiu e Bruno  
+
+---
+
+## Criação dos Botões de Acessibilidade
 
 Foram adicionados dois botões na página:
 
-A+ para aumentar a fonte.
+- **A+** → para aumentar o tamanho da fonte.
+- **A−** → para diminuir o tamanho da fonte.
 
-A− para diminuir a fonte.
+---
 
-Os botões foram inseridos dentro de uma <div> no HTML.
+## 2. Fluxograma do Algoritmo
 
-Criou o arquivo JavaScript
+Entrada: O usuário clica em um botão.
 
-Foi criado um arquivo externo chamado script.js.
+Decisão: * É o botão de aumentar? Verifica se o tamanho atual é menor que o máximo permitido. Se sim, soma.
 
-Esse arquivo é responsável por controlar o comportamento dos botões.
+É o botão de diminuir? Verifica se o tamanho atual é maior que o mínimo permitido. Se sim, subtrai.
 
-Definiu uma variável para o tamanho da fonte
+Ação: O novo valor é enviado para a tela (CSS/Estilo).
 
-Foi criada a variável tamanhoFonte iniciando em 100%, representando o tamanho padrão do texto.
+Saída: O texto muda visualmente para o usuário
 
-let tamanhoFonte = 100;
+---
 
-Definiu limites mínimo e máximo
+## Algoritmo — Botão de Alto Contraste Atividade 02
 
-Para evitar que o layout quebrasse, foram definidos limites:
+## Objetivo
 
-mínimo: 70%
+Permitir que o usuário ative ou desative o modo **Alto Contraste**, melhorando a acessibilidade visual da página.
 
-máximo: 150%
+---
 
-const minimo = 70;
-const maximo = 150;
+## Passo a Passo do Algoritmo
 
-Criou a função para aumentar a fonte
+### 1. Identificar os elementos da página
 
-Quando o usuário clica em A+:
+- O botão é responsável por ativar o contraste.
 
-O sistema verifica se o tamanho ainda não atingiu o limite máximo.
+---
 
-Se não atingiu, aumenta 10%.
+### 2. Aguardar interação do usuário
 
-Atualiza o tamanho da fonte da página.
+O sistema fica aguardando o usuário clicar no botão.
 
-Criou a função para diminuir a fonte
+---
 
-Quando o usuário clica em A−:
+### 3. Alternar o modo de contraste
 
-O sistema verifica se o tamanho ainda está acima do mínimo.
+Ao clicar no botão:
 
-Se estiver, diminui 10%.
+- O sistema verifica se a classe  já está aplicada.
+- Se estiver → remove a classe.
+- Se não estiver → adiciona a classe.
 
-Atualiza o tamanho da fonte.
+---
 
-Aplicou a alteração na página
+### 4. Aplicar os estilos automaticamente
 
-O JavaScript modifica o tamanho da fonte usando:
+Quando a classe é adicionada:
 
-document.body.style.fontSize
+- Fundo muda para preto.
+- Texto muda para branco.
+- Links mudam para amarelo.
+- A transição ocorre suavemente.
 
-Assim, todo o conteúdo da página muda automaticamente.
+---
 
-Conectou o JavaScript ao HTML
+### 5. (Opcional) Salvar preferência do usuário
 
-O arquivo foi ligado ao HTML usando:
-<script src="script.js"></script>
+O sistema pode salvar a escolha  , permitindo manter o contraste ativo ao recarregar a página.
 
+---
 
+## Fluxo Resumido
+
+INÍCIO  
+↓  
+Usuário clica no botão  
+↓  
+Alterna classe  no body  
+↓  
+CSS aplica novo estilo automaticamente  
+↓  
+Página muda para alto contraste  
+↓  
+FIM
+
+---
+
+## Resultado
+
+O usuário pode ativar e desativar o modo de alto contraste facilmente, tornando o site mais acessível para pessoas com baixa visão ou sensibilidade visual.
