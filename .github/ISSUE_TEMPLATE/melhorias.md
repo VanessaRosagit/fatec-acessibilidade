@@ -18,6 +18,6 @@ Permitir que o usuário aumente ou diminua o tamanho da fonte.
 Detalhes extras aqui.
 
 ## link para o projeto
-https://github.com/VanessaRosagit/fatec-acessibilidade/compare/main...sandro-sa%3Afatec-acessibilidade%3Amain
+https://github.com/VanessaRosagit/fatec-acessibilidade/tree/atividade-1-fonte-aumentar-diminuir
 ## Membros da equipe
 Vanessa, Bruno, Abigaiu
